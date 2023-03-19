@@ -17,11 +17,5 @@ namespace ClassroomManagementSystem
             Age = age;
             City = city;
         }
-
-        // Declaring a method that will print a greeting message containing the name and age of the student
-        public void SayHello()
-        {
-            Console.WriteLine($"Hello, nama saya {Name} dan saya berumur {Age} tahun");
-        }
     }
 }

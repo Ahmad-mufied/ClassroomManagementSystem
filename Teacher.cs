@@ -19,11 +19,5 @@ namespace ClassroomManagementSystem
             Subject = subject;
             City = city;
         }
-
-        // Declare a method for the teacher to say hello and print their name, age, and subject they teach
-        public void SayHello()
-        {
-            Console.WriteLine($"Hello, Nama saya {Name} dan saya berumur {Age} . Saya berasal dari kota {City}. Saya mengajar pelajaran {Subject}.");
-        }
     }
 }
