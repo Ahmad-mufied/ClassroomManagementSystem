@@ -9,17 +9,17 @@ namespace ClassroomManagementSystem
         public string ClassName { get; }
         public int Capacity { get; }
         public Student[] Students { get; }
-        public Teacher[] Teacher { get; }
+        public Teacher[] Teachers { get; }
 
         // Declaring a constructor that will be used to create an instance of the class
-        public Classroom(string classCode, string className,  int capacity, Student[] students, Teacher[] teacher)
+        public Classroom(string classCode, string className,  int capacity, Student[] students, Teacher[] teachers)
         {
             // Initializing the properties of the class with the provided arguments
             ClassCode = classCode;
             ClassName = className;
             Capacity = capacity;
             Students = students;
-            Teacher = teacher;
+            Teachers = teachers;
         }
 
         // Declaring a method that will print the information of the classroom, its students, and its teacher
@@ -31,7 +31,7 @@ namespace ClassroomManagementSystem
             
             // Displaying the information of the teacher
             Console.WriteLine("\nDaftar Dosen: ");
-            displayTecher();
+            displayTeacher();
 
             // Displaying the information of the students
             Console.WriteLine("\nDaftar Mahasiswa:");
@@ -42,10 +42,10 @@ namespace ClassroomManagementSystem
             Console.WriteLine("Press any key to quit the program...");
         }
 
-        private void displayTecher()
+        private void displayTeacher()
         {
             // Printing the name, age, subject, and city of each teacher in the class
-            foreach (var dosen in Teacher)
+            foreach (var dosen in Teachers)
             {
                 Console.WriteLine($"Nama Dosen : {dosen.Name} , Umur : {dosen.Age} , Jurusan : {dosen.Subject} , Kota : {dosen.City}");
             }
