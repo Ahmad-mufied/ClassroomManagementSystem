@@ -1,0 +1,38 @@
+/Coba1.sln
+# Visual Studio files
+*.obj
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+*.lib
+*.sbr
+*.scc
+*.sdf
+ipch/
+obj/
+Debug/
+Release/
+*.dll
+*.exe
+*.json
+# Exclude bin and obj folders
+bin/
+obj/
+.idea/
+
+
+# Other files to ignore
+Thumbs.db
+desktop.ini
